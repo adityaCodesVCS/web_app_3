@@ -31,7 +31,7 @@ public class AddController extends HttpServlet {
 		
 		request.setAttribute("result", result); //Before I submit 'request' object to View(.jsp), I'll create variable as "result" in 'request' object and store 'result' in that variable.
 		RequestDispatcher rd = request.getRequestDispatcher("welcome.jsp"); //Here 'rd' pointing to .jsp page.
-		rd.forward(request, response); //Now it'll load our .jsp page & request and response object addresses given to implict object of JSP.
+		rd.forward(request, response); //Now it will load our .jsp page & request and response object addresses given to implict object of JSP.
 		//View take that Data('result') from Controller and shown on webPage.
 		
 		//doGet(request, response);
